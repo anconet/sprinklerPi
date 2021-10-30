@@ -1,1 +1,4 @@
 .vs
+gettingStarted/node_modules
+gettingStarted/package-lock.json
+gettingStarted/package.json
