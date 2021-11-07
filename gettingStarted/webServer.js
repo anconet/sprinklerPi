@@ -2,6 +2,7 @@ console.log('Running webServer.js');
 
 var http = require('http').createServer(handler); //require http server, and create server with function handler()
 var fs = require('fs'); //require filesystem module
+var file = require('fs');
 var io = require('socket.io')(http) //require socket.io module and pass the http object (server)
 
 http.listen(8080); //listen to port 8080
@@ -32,3 +33,10 @@ io.sockets.on('connection', function (socket) {// WebSocket Connection
         //}
     });
 });
+
+let config = JSON.parse (file.readFileSync('./config.json',function(err, data) { //read file index.html in public folder
+  if (err) {
+    console.log('Couldn\'t open config.json')
+  }}))
+
+console.log(config);
