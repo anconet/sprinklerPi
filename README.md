@@ -11,10 +11,10 @@ Gotta control them sprinklers ya know!
 
 ## On Raspberry Pi
 ```
-sudo apt-get update
-sudo apt-get dist-upgrade
-curl -sL https://deb.nodesource.com/setup_17.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt update
+sudo apt upgrade
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install -y nodejs
 npm install onoff
 npm install socket.io
 ```
