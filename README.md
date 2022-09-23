@@ -15,6 +15,8 @@ sudo apt update
 sudo apt upgrade
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
+sudo apt install -y npm
+sudo npm instal http-server
 npm install onoff
 npm install socket.io
 ```
